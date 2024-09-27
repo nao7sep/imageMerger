@@ -75,7 +75,8 @@ namespace _imageMerger
                         {
                             throw new ArgumentException ($"Invalid image file: {x}");
                         }
-                    });
+                    }).
+                    ToArray (); // Images wont be loaded more than once.
 
                     int xTotalWidth = xImages.Sum (x => x.Image.Width),
                         xMaxHeight = xImages.Max (x => x.Image.Height);
