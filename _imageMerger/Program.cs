@@ -53,7 +53,7 @@ namespace _imageMerger
                         Console.Write ("Pages per group: ");
                         string? xInput = Console.ReadLine ();
 
-                        if (int.TryParse (xInput, out int xValue) && xValue >= 2 && xValue < args.Length && args.Length % xValue == 0)
+                        if (int.TryParse (xInput, out int xValue) && xValue >= 2 && xValue <= args.Length && args.Length % xValue == 0)
                         {
                             xPagesPerGroup = xValue;
                             break;
