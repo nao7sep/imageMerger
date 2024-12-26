@@ -4,7 +4,7 @@ using SixLabors.ImageSharp.Drawing.Processing;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
-namespace _imageMerger
+namespace imageMerger
 {
     class Program
     {
@@ -14,7 +14,7 @@ namespace _imageMerger
             {
                 if (args.Length < 2)
                 {
-                    Console.WriteLine ("Usage: _imageMerger.exe <input1> <input2> ...");
+                    Console.WriteLine ("Usage: imageMerger.exe <input1> <input2> ...");
                     return;
                 }
 
